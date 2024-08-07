@@ -22,7 +22,7 @@ namespace FairyGUI
     /// <summary>
     /// GList class.
     /// </summary>
-    public class GList : GComponent
+    public partial class GList : GComponent
     {
         /// <summary>
         /// 如果true，当item不可见时自动折叠，否则依然占位
@@ -1496,17 +1496,19 @@ namespace FairyGUI
                 }
 
                 this.scrollPane.onScroll.AddCapture(__scrolled);
-                // 虚拟列表，页面模式下，如果list有适配，会导致在没有初始化
-                // _curLineItemCount 变量前，屏幕适配，或者列表位置尺寸改变，导致 devide by zero错误
-                if (_layout == ListLayoutType.Pagination)
-                {
-                    this._virtualListChanged = 2;
-                    this.RefreshVirtualList(null);
-                }
-                else
-                {
-                    SetVirtualListChangedFlag(true);
-                }
+                // fixme: 此处需要测试一下代码
+                // // 虚拟列表，页面模式下，如果list有适配，会导致在没有初始化
+                // // _curLineItemCount 变量前，屏幕适配，或者列表位置尺寸改变，导致 devide by zero错误
+                // if (_layout == ListLayoutType.Pagination)
+                // {
+                //     this._virtualListChanged = 2;
+                //     this.RefreshVirtualList(null);
+                // }
+                // else
+                // {
+                //     SetVirtualListChangedFlag(true);
+                // }
+                SetVirtualListChangedFlag(true);
             }
         }
 

@@ -8,7 +8,7 @@ namespace FairyGUI
     /// Global configs. These options should be set before any UI construction.
     /// </summary>
     [AddComponentMenu("FairyGUI/UI Config")]
-    public class UIConfig : MonoBehaviour
+    public partial class UIConfig : MonoBehaviour
     {
         /// <summary>
         /// Dynamic Font Support. 
@@ -178,14 +178,6 @@ namespace FairyGUI
         /// Suggest to enable it on low dpi (e.g. 96dpi) screens.
         /// </summary>
         public static bool makePixelPerfect = false;
-
-
-        /// <summary>
-        /// If disable DisplayObjectInfo. Developers will not be able to visually edit
-        /// DisplayObject properties in Editor mode, nor will they be able to connect to
-        /// the Poco SDK to get or set object properties
-        /// </summary>
-        public static bool disableDisplayObjectInfo = false;
 
         public enum ConfigKey
         {

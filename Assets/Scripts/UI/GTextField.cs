@@ -63,7 +63,7 @@ namespace FairyGUI
 
         virtual protected void SetTextFieldText()
         {
-            string str = _text;
+            string str = UIConfig.TranslateInterface?.TranslateStringId(this, _text) ?? _text;
             if (_templateVars != null)
                 str = ParseTemplate(str);
 
@@ -160,11 +160,13 @@ namespace FairyGUI
                 {
                     if (!_templateVars.TryGetValue(tag.Substring(0, pos3), out value))
                         value = tag.Substring(pos3 + 1);
+                    else value = UIConfig.TranslateInterface?.TranslateStringId(this, value) ?? value;
                 }
                 else
                 {
                     if (!_templateVars.TryGetValue(tag, out value))
                         value = "";
+                    else value = UIConfig.TranslateInterface?.TranslateStringId(this, value) ?? value;
                 }
                 buffer.Append(value);
                 pos1 = pos2 + 1;

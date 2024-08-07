@@ -144,7 +144,7 @@ namespace FairyGUI
                     return new GMovieClip();
 
                 case ObjectType.Component:
-                    return new GComponent();
+                    return componentCreator?.Invoke() ?? new GComponent();
 
                 case ObjectType.Text:
                     return new GTextField();
@@ -171,10 +171,10 @@ namespace FairyGUI
                         return new GLoader();
 
                 case ObjectType.Button:
-                    return new GButton();
+                    return buttonCreator?.Invoke() ?? new GButton();
 
                 case ObjectType.Label:
-                    return new GLabel();
+                    return labelCreator?.Invoke() ?? new GLabel();
 
                 case ObjectType.ProgressBar:
                     return new GProgressBar();
@@ -186,7 +186,7 @@ namespace FairyGUI
                     return new GScrollBar();
 
                 case ObjectType.ComboBox:
-                    return new GComboBox();
+                    return comboBoxCreator?.Invoke() ?? new GComboBox();
 
                 case ObjectType.Tree:
                     return new GTree();
@@ -198,5 +198,14 @@ namespace FairyGUI
                     return null;
             }
         }
+
+        #region 定制内容
+
+        public static Func<GButton> buttonCreator; //按钮构造器
+        public static Func<GComponent> componentCreator; // 组件构造器
+        public static Func<GLabel> labelCreator; // 构造器
+        public static Func<GComboBox> comboBoxCreator; // 构造器
+
+        #endregion
     }
 }

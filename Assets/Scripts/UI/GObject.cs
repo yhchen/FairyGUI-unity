@@ -12,19 +12,15 @@ namespace FairyGUI
         /// </summary>
         public string id { get; private set; }
 
-        private string _name;
-
         /// <summary>
         /// Name of the object.
         /// </summary>
-        public string name
+        private string _name;
+
+        public virtual string name
         {
             get => _name;
-            set
-            {
-                _name = value;
-                gameObjectName = _name;
-            }
+            set => gameObjectName = _name = value;
         }
 
         /// <summary>
@@ -481,9 +477,17 @@ namespace FairyGUI
         /// <summary>
         /// 设置对象为全屏大小（逻辑屏幕）。
         /// </summary>
-        public void MakeFullScreen()
+        public virtual void MakeFullScreen()
         {
-            this.SetSize(GRoot.inst.width, GRoot.inst.height);
+			if (GRoot.inst.height / GRoot.inst.width > 2)
+			{
+				this.SetSize(GRoot.inst.width, GRoot.inst.height - UIConfig.fFullScreenGapTop - UIConfig.fFullScreenGapBot);
+				this.SetXY(this.x,UIConfig.fFullScreenGapTop);
+			}
+			else
+			{
+				this.SetSize(GRoot.inst.width, GRoot.inst.height, true);
+			}
         }
 
         /// <summary>
@@ -950,7 +954,8 @@ namespace FairyGUI
             }
         }
 
-        public bool internalVisible //经过控制器控制后的结果,原来的visible不包含控制器的行为
+        //经过控制器控制后的结果,原来的visible不包含控制器的行为
+        internal bool internalVisible
         {
             get
             {

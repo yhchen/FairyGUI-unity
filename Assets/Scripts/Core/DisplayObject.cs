@@ -298,13 +298,13 @@ namespace FairyGUI
                     _flags |= Flags.OutlineChanged;
                     if (parent != null && _visible)
                     {
-                        gameObject.SetActive(true);
+                        gameObject?.SetActive(true);
                         InvalidateBatchingState();
                         if (this is Container)
                             ((Container)this).InvalidateBatchingState(true);
                     }
                     else
-                        gameObject.SetActive(false);
+                        gameObject?.SetActive(false);
                 }
             }
         }

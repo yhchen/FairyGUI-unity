@@ -54,5 +54,4 @@
         /// </summary>
         void Close();
     }
-    
 }

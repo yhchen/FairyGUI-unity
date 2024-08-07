@@ -47,6 +47,9 @@ namespace FairyGUI
 
         override public void Dispose()
         {
+            // fixme: 此处目前在FairyGUI中并没有，考虑是否需要加回来
+            if (this._disposed) return;
+            ClearContent();
             _content.Dispose();
             base.Dispose();
         }

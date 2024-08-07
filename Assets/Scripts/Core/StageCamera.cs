@@ -188,6 +188,13 @@ namespace FairyGUI
             camera.allowHDR = false;
             camera.allowMSAA = false;
 #endif
+            // #region 适配URP
+            // UniversalAdditionalCameraData universalAdditionalCameraData = camera.GetUniversalAdditionalCameraData();
+            // universalAdditionalCameraData.renderType = CameraRenderType.Overlay;
+            // Camera.main.GetUniversalAdditionalCameraData().cameraStack.Add(camera);
+            // DontDestroyOnLoad(cameraObject);
+            // #endregion
+
             cameraObject.AddComponent<StageCamera>();
 
             return camera;

@@ -21,7 +21,8 @@
         RotationX,
         RotationY,
         Alpha,
-        Progress
+        Progress,
+        Color,
     }
 
     internal class TweenPropTypeUtils
@@ -96,6 +97,10 @@
 
                 case TweenPropType.Progress:
                     g.asProgress.Update(value.d);
+                    break;
+                case TweenPropType.Color:
+                    if (g is IColorGear colorGear)
+                        colorGear.color = value.color;
                     break;
             }
         }

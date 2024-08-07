@@ -1,4 +1,5 @@
 #if FAIRYGUI_SPINE
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using Spine.Unity;
@@ -49,11 +50,24 @@ namespace FairyGUI
             _content.customCloneMaterials = MaterialOverride;
             _content.customRecoverMaterials = CleanMaterialOverride;
 
+            __onAddSpine(asset);
             _spineAnimation = SkeletonRenderer.NewSpineGameObject<SkeletonAnimation>(asset);
             _spineAnimation.gameObject.name = asset.name;
             Spine.SkeletonData dat = asset.GetSkeletonData(false);
             _spineAnimation.gameObject.transform.localScale = new Vector3(1 / asset.scale, 1 / asset.scale, 1);
             _spineAnimation.gameObject.transform.localPosition = new Vector3(anchor.x, -anchor.y, 0);
+            cloneMaterial = spineMaterialCloneType switch
+            {
+                ESpineMaterialCloneType.Auto => cloneMaterial,
+                ESpineMaterialCloneType.ForceClone => true,
+                ESpineMaterialCloneType.ForceDoNotClone => false,
+                _ => throw new ArgumentOutOfRangeException()
+            };
+            if (!cloneMaterial)
+            {
+                if (asset.atlasAssets.Length > 1 || asset.atlasAssets[0] == null || asset.atlasAssets[0].MaterialCount > 1)
+                    Debug.LogError($"Spine: {url} Contains More than one materials. my be you should clone materials!");
+            }
             SetWrapTarget(_spineAnimation.gameObject, cloneMaterial, width, height);
 
             _spineAnimation.skeleton.R = _color.r;
@@ -70,6 +84,8 @@ namespace FairyGUI
                 return;
 
             SetSpine(asset, _contentItem.width, _contentItem.height, _contentItem.skeletonAnchor);
+            // fixme: 评估是否要删除
+            ResumeAnimations();
         }
 
         protected void OnChangeSpine(string propertyName)
@@ -84,25 +100,34 @@ namespace FairyGUI
                 _spineAnimation.skeleton.B = _color.b;
                 return;
             }
+            // else if (propertyName == "playing" && !this._playing)
+            // {
+            //     Debug.LogError("spine pause was not support");
+            //     return;
+            // }
 
             var skeletonData = _spineAnimation.skeleton.Data;
 
             var state = _spineAnimation.AnimationState;
-            Spine.Animation animationToUse = !string.IsNullOrEmpty(_animationName) ? skeletonData.FindAnimation(_animationName) : null;
+            Spine.Animation animationToUse = !string.IsNullOrEmpty(_animationName)
+                ? skeletonData.FindAnimation(_animationName)
+                : null;
             if (animationToUse != null)
             {
                 var trackEntry = state.GetCurrent(0);
-                if (trackEntry == null || trackEntry.Animation.Name != _animationName || trackEntry.IsComplete && !trackEntry.Loop)
+                if (trackEntry == null || trackEntry.Animation.Name != _animationName ||
+                    trackEntry.IsComplete && !trackEntry.Loop)
                     trackEntry = state.SetAnimation(0, animationToUse, _loop);
                 else
                     trackEntry.Loop = _loop;
 
                 if (_playing)
-                    trackEntry.TimeScale = 1;
+                    trackEntry.TimeScale = 1; // fixme: this.timeScale
                 else
                 {
                     trackEntry.TimeScale = 0;
-                    trackEntry.TrackTime = Mathf.Lerp(0, trackEntry.AnimationEnd - trackEntry.AnimationStart, _frame / 100f);
+                    trackEntry.TrackTime = Mathf.Lerp(0, trackEntry.AnimationEnd - trackEntry.AnimationStart,
+                        _frame / 100f);
                 }
             }
             else
@@ -127,9 +152,12 @@ namespace FairyGUI
                 else
                     GameObject.DestroyImmediate(_spineAnimation.gameObject);
 
+                _spineAnimation = null;
                 _content.customCloneMaterials = null;
                 _content.customRecoverMaterials = null;
             }
+
+            __onRemoveSpine(this._dataAsset);
         }
 
         protected void OnUpdateSpine(UpdateContext context)
@@ -140,6 +168,43 @@ namespace FairyGUI
 
         private void MaterialOverride(Dictionary<Material, Material> materials)
         {
+            if (this.DataAsset == null)
+                return;
+            if (this.DataAsset.atlasAssets != null)
+            {
+                foreach (var assetAtlas in this.DataAsset.atlasAssets)
+                {
+                    if (assetAtlas.MaterialCount == 0)
+                        continue;
+                    foreach (Material mat in assetAtlas.Materials)
+                    {
+                        Material newMat;
+                        if (!materials.TryGetValue(mat, out newMat))
+                        {
+                            newMat = new Material(mat);
+                            materials[mat] = newMat;
+                        }
+
+                        if (mat.renderQueue != 3000) //Set the object rendering in Transparent Queue as UI objects
+                            newMat.renderQueue = 3000;
+                    }
+                }
+            }
+
+            if (this._outline)
+            {
+                foreach (var mat in materials.Values)
+                {
+                    var shaderName = mat.shader.name;
+                    if (shaderName.IndexOf(ShaderOutlineNamePrefix) != -1)
+                        return;
+                    shaderName = shaderName.Replace(ShaderNormalNamePrefix, ShaderOutlineNamePrefix);
+                    mat.shader = Shader.Find(shaderName);
+                    mat.SetColor(ID_OutlineColor, this._outLineClr);
+                    mat.SetInt(ID_OutlineWith, this._outlineWith);
+                }
+            }
+
             if (_spineAnimation != null)
             {
                 foreach (var kv in materials)

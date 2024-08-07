@@ -379,11 +379,13 @@ namespace FairyGUI
         {
             ClearContent();
 
-            if (string.IsNullOrEmpty(_url))
+            var realUrl = TranslateUrl(_url);
+            
+            if (string.IsNullOrEmpty(realUrl))
                 return;
 
-            if (_url.StartsWith(UIPackage.URL_PREFIX))
-                LoadFromPackage(_url);
+            if (realUrl.StartsWith(UIPackage.URL_PREFIX))
+                LoadFromPackage(realUrl);
             else
                 LoadExternal();
         }
@@ -465,6 +467,11 @@ namespace FairyGUI
                 onExternalLoadFailed();
         }
 
+        protected virtual string TranslateUrl(string sUrl)
+        {
+            return sUrl;
+        }
+
         virtual protected void FreeExternal(NTexture texture)
         {
 #if FAIRYGUI_PUERTS
@@ -477,6 +484,10 @@ namespace FairyGUI
 
         public void onExternalLoadSuccess(NTexture texture)
         {
+            if (this.isDisposed)
+            {
+                return;
+            }
             _content.texture = texture;
             sourceWidth = texture.width;
             sourceHeight = texture.height;

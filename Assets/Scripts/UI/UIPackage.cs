@@ -12,7 +12,7 @@ namespace FairyGUI
     /// <summary>
     /// A UI Package contains a description file and some texture, sound assets.
     /// </summary>
-    public class UIPackage
+    public partial class UIPackage
     {
         /// <summary>
         /// Unload UIAssetBundle by FairyGUI system.
@@ -1235,7 +1235,10 @@ namespace FairyGUI
             {
                 case PackageItemType.Atlas:
                     if (item.texture == null)
+                    {
                         item.texture = new NTexture(null, new Rect(0, 0, item.width, item.height));
+                        item.texture.packageItem = item;
+                    }
                     item.texture.Reload((Texture)asset, null);
                     item.texture.destroyMethod = destroyMethod;
                     break;
@@ -1270,7 +1273,10 @@ namespace FairyGUI
             {
                 _loadAsyncFunc(fileName, ext, typeof(Texture), item);
                 if (item.texture == null)
+                {
                     item.texture = new NTexture(null, new Rect(0, 0, item.width, item.height));
+                    item.texture.packageItem = item;
+                }
                 item.texture.destroyMethod = DestroyMethod.None;
             }
             else
@@ -1326,6 +1332,7 @@ namespace FairyGUI
                 if (item.texture == null)
                 {
                     item.texture = new NTexture(tex, alphaTex, (float)tex.width / item.width, (float)tex.height / item.height);
+                    item.texture.packageItem = item;
                     item.texture.onRelease += (NTexture t) =>
                     {
                         if (onReleaseResource != null)
@@ -1344,10 +1351,8 @@ namespace FairyGUI
             if (_sprites.TryGetValue(item.id, out sprite))
             {
                 NTexture atlas = (NTexture)GetItemAsset(sprite.atlas);
-                if (atlas.width == sprite.rect.width && atlas.height == sprite.rect.height)
-                    item.texture = atlas;
-                else
-                    item.texture = new NTexture(atlas, sprite.rect, sprite.rotated, sprite.originalSize, sprite.offset);
+                item.texture = new NTexture(atlas, sprite.rect, sprite.rotated, sprite.originalSize, sprite.offset);
+                item.texture.packageItem = item;
             }
             else
                 item.texture = NTexture.Empty;
@@ -1449,10 +1454,13 @@ namespace FairyGUI
                 frame.addDelay = buffer.ReadInt() / 1000f;
                 spriteId = buffer.ReadS();
 
+                // fixme: 此处并没有清理掉MovieClip的接口，需要优化！
                 if (spriteId != null && _sprites.TryGetValue(spriteId, out sprite))
                 {
                     frame.texture = new NTexture((NTexture)GetItemAsset(sprite.atlas), sprite.rect, sprite.rotated,
                         new Vector2(item.width, item.height), frameRect.position);
+                    frame.texture.AddRef();
+                    frame.texture.onRelease += tx => tx.ReleaseRef();
                 }
                 item.frames[i] = frame;
 

@@ -8,7 +8,7 @@ namespace FairyGUI
     /// <summary>
     /// GoWrapper is class for wrapping common gameobject into UI display list.
     /// </summary>
-    public class GoWrapper : DisplayObject
+    public partial class GoWrapper : DisplayObject
     {
         [Obsolete("No need to manually set this flag anymore, coz it will be handled automatically.")]
         public bool supportStencil;
@@ -80,7 +80,14 @@ namespace FairyGUI
         {
             // set Flags.SkipBatching only target not null
             if (target == null) _flags &= ~Flags.SkipBatching;
-            else _flags |= Flags.SkipBatching;
+            else
+            {
+                if (!cloneMaterial)
+                {
+                    // 没有克隆材质，跳过合批
+                    _flags |= Flags.SkipBatching;
+                }
+            }
             InvalidateBatchingState();
 
             RecoverMaterials();
@@ -92,7 +99,7 @@ namespace FairyGUI
             _canvas = null;
             _wrapTarget = target;
             _shouldCloneMaterial = false;
-            _renderers.Clear();
+            _renderers?.Clear();
 
             if (_wrapTarget != null)
             {
@@ -212,7 +219,7 @@ namespace FairyGUI
 
         void RecoverMaterials()
         {
-            if (_materialsBackup.Count == 0)
+            if ((_materialsBackup?.Count ?? 0) == 0)
                 return;
 
             int cnt = _renderers.Count;

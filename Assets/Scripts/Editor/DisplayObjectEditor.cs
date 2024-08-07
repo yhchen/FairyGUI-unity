@@ -121,6 +121,16 @@ namespace FairyGUIEditor
                 if (EditorGUI.EndChangeCheck())
                     gObj.icon = icon;
 
+                EditorGUI.BeginChangeCheck();
+                bool gray = EditorGUILayout.Toggle("Gray", gObj.grayed);
+                if (EditorGUI.EndChangeCheck())
+                    gObj.grayed = gray;
+
+                EditorGUI.BeginChangeCheck();
+                Color color = EditorGUILayout.ColorField("Color", gObj.GetColor());
+                if (EditorGUI.EndChangeCheck())
+                    gObj.SetColor(color, false);
+
                 if (gObj.displayObject != null)
                 {
                     EditorGUI.BeginDisabledGroup(true);

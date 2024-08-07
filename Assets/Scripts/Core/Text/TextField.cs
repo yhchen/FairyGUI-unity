@@ -1375,7 +1375,7 @@ namespace FairyGUI
 #if DEBUG
                         if (ch != '\n')
                         {
-                            Debug.LogWarning($"Text Field error  Name = {this.gOwner.name} Parant = {this.gOwner.parent},FontName = {_font.name} ch = {ch} not find !!");
+                            Debug.LogWarning($"Text Field error  Name = {this.gOwner?.name} Parant = {this.gOwner?.parent},FontName = {_font.name} ch = {ch} not find !!");
                         }
 #endif
                         if (_charPositions != null)

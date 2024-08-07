@@ -62,6 +62,16 @@ namespace FairyGUI
         /// </summary>
         public event Action<NTexture> onRelease;
 
+        /// <summary>
+        /// This event will trigger when ref count is zero
+        /// </summary>
+        public static event Action<PackageItem> onReleasePackageItem;
+
+        /// <summary>
+        /// Ref PackageItem
+        /// </summary>
+        public PackageItem packageItem;
+
         Texture _nativeTexture;
         Texture _alphaTexture;
 
@@ -500,6 +510,8 @@ namespace FairyGUI
 
                 if (onRelease != null)
                     onRelease(this);
+                if (onReleasePackageItem != null && packageItem != null)
+                    onReleasePackageItem(packageItem);
             }
         }
 
@@ -516,6 +528,7 @@ namespace FairyGUI
             _root = null;
             onSizeChanged = null;
             onRelease = null;
+            packageItem = null;
         }
     }
 }

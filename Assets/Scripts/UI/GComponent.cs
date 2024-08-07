@@ -56,7 +56,7 @@ namespace FairyGUI
 
         override protected void CreateDisplayObject()
         {
-            rootContainer = new Container("GComponent");
+            rootContainer = new Container($"{this.GetType().Name}.{this.name}.{this.id}");
             rootContainer.gOwner = this;
             rootContainer.onUpdate += OnUpdate;
             container = rootContainer;
@@ -1620,7 +1620,7 @@ namespace FairyGUI
         /// Method for extensions to override
         /// </summary>
         /// <param name="xml"></param>
-        virtual public void ConstructFromXML(XML xml)
+        protected virtual void ConstructFromXML(XML xml)
         {
         }
 

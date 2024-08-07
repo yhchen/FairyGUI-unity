@@ -30,7 +30,7 @@ namespace FairyGUI
 
         override protected void SetTextFieldText()
         {
-            string str = _text;
+            string str = UIConfig.TranslateInterface?.TranslateStringId(this, _text) ?? _text;
             if (_templateVars != null)
                 str = ParseTemplate(str);
 
