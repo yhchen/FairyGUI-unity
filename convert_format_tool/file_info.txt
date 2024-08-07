@@ -1,0 +1,218 @@
+../Assets/Extensions/DragonBones/DragonBonesLoader.cs: C++ source text, ASCII text
+../Assets/Extensions/Spine/SpineLoader.cs: C++ source text, ASCII text
+../Assets/Extensions/TextMeshPro/TMPFont.cs: C++ source text, ASCII text
+../Assets/Extensions/TextMeshPro/TMPTextFormat.cs: C++ source text, ASCII text
+../Assets/Examples/Guide/GuideMain.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/Basics/Window1.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/Basics/BasicsMain.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/Basics/Window2.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/Perspetive/PerspectiveMain.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/Transition/TransitionMain.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/HeadBar/HeadBarMain.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/EmitNumbers/EmitComponent.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/EmitNumbers/EmitNumbersMain.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/EmitNumbers/EmitManager.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/Extension/MailItem.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/Extension/ExtensionMain.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/LoopList/LoopListMain.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/Cooldown/CooldownMain.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/RenderTexture/RenderTextureMain.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/RenderTexture/Window3.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/RenderTexture/RenderImage.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/TreeView/TreeViewMain.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/TypingEffect/TypingEffectMain.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/Emoji/EmojiMain.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/Emoji/EmojiParser.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/Curve/CurveMain.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/VirtualList/VirtualListMain.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/Particles/CoolComponent.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/Particles/ParticlesMain.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/TurnPage/TurnPageMain.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/TurnPage/BookPage.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/TurnPage/FairyBook.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/Gesture/GestureMain.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/Model/ModelMain.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/ScrollPane/ScrollPaneMain.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/ModalWaiting/Window4.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/ModalWaiting/ModalWaitingMain.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/TurnCard/TurnCardMain.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/TurnCard/Card.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/Joystick/JoystickModule.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/Joystick/JoystickMain.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/Filter/FilterMain.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/CutScene/LevelManager.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/CutScene/CutSceneMain.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/Bag/MyGLoader.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/Bag/IconManager.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/Bag/BagMain.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/Bag/BagWindow.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/PullToRefresh/ScrollPaneHeader.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/PullToRefresh/PullToRefreshMain.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/BundleUsage/BundleUsageMain.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/Editor/BuildAssetBundles.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Examples/HitTest/HitTestMain.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/Tree/TreeNode.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/Tree/TreeView.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/AsyncCreationHelper.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/UIPainter.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/GLoader.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/GMovieClip.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/UIObjectFactory.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/Transition.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/Relations.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/GRoot.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/GSlider.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/GTextInput.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/GObjectPool.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/GButton.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/Margin.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/UIPackage.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/PopupMenu.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/RelationItem.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/DragDropManager.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/GGraph.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/Controller.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/PackageItem.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/GProgressBar.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/FieldTypes.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/GLoader3D.cs: C++ source text, Unicode text, UTF-8 text
+../Assets/Scripts/UI/Window.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/IUISource.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/GTreeNode.cs: C++ source text, ASCII text
+../Assets/Scripts/UI/GTextField.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/Action/ChangePageAction.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/Action/ControllerAction.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/Action/PlayTransitionAction.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/EMRenderSupport.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/GObject.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/GComponent.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/GLabel.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/TranslationHelper.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/GScrollBar.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/GGroup.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/GTree.cs: C++ source text, Unicode text, UTF-8 text
+../Assets/Scripts/UI/UIContentScaler.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/GRichTextField.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/Gears/IAnimationGear.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/Gears/GearIcon.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/Gears/GearColor.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/Gears/GearSize.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/Gears/GearFontSize.cs: C++ source text, ASCII text
+../Assets/Scripts/UI/Gears/GearDisplay2.cs: C++ source text, ASCII text, with CRLF line terminators
+../Assets/Scripts/UI/Gears/GearAnimation.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/Gears/GearLook.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/Gears/IColorGear.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/Gears/GearText.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/Gears/GearXY.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/Gears/GearDisplay.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/Gears/GearBase.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/ScrollPane.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/GComboBox.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/GImage.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/UIConfig.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/UIPanel.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/UI/GList.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Tween/GPath.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Tween/GTweener.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Tween/EaseType.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Tween/EaseManager.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Tween/TweenValue.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Tween/GTween.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Tween/TweenPropType.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Tween/TweenManager.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/Mesh/EllipseMesh.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/Mesh/LineMesh.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/Mesh/VertexBuffer.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/Mesh/StraightLineMesh.cs: C++ source text, ASCII text
+../Assets/Scripts/Core/Mesh/CompositeMesh.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/Mesh/RectMesh.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/Mesh/PlaneMesh.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/Mesh/PolygonMesh.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/Mesh/RegularPolygonMesh.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/Mesh/RoundedRectMesh.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/Mesh/MeshFactory.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/Mesh/FillMesh.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/MovieClip.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/NAudioClip.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/CaptureCamera.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/NGraphics.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/StageEngine.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/StageCamera.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/NTexture.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/Stage.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/BlendMode.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/UpdateContext.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/Image.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/Container.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/Text/Emoji.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/Text/FontManager.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/Text/InputTextField.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/Text/RTLSupport.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/Text/BaseFont.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/Text/TypingEffect.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/Text/RichTextField.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/Text/TextField.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/Text/BitmapFont.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/Text/DynamicFont.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/Text/SelectionShape.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/Text/TouchScreenKeyboard.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/Text/TextFormat.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/Text/IKeyboard.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/GoWrapper.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/DisplayObject.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/MaterialManager.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/ShaderConfig.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/Stats.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/Shape.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/HitTest/RectHitTest.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/HitTest/PixelHitTest.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/HitTest/IHitTest.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/HitTest/ShapeHitTest.cs: C++ source text, ASCII text
+../Assets/Scripts/Core/HitTest/ColliderHitTest.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/HitTest/MeshColliderHitTest.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Core/HitTest/HitTestContext.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Utils/XMLIterator.cs: exported SGML document text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Utils/XML.cs: ASCII text, with CRLF line terminators
+../Assets/Scripts/Utils/Html/HtmlPageContext.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Utils/Html/IHtmlPageContext.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Utils/Html/HtmlSelect.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Utils/Html/HtmlInput.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Utils/Html/HtmlElement.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Utils/Html/HtmlParseOptions.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Utils/Html/HtmlParser.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Utils/Html/HtmlImage.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Utils/Html/HtmlButton.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Utils/Html/IHtmlObject.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Utils/Html/HtmlLink.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Utils/Timers.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Utils/XMLUtils.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Utils/ToolSet.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Utils/ByteBuffer.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Utils/UBBParser.cs: HTML document text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Utils/XMLList.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Utils/ZipReader.cs: Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Gesture/PinchGesture.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Gesture/RotationGesture.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Gesture/LongPressGesture.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Gesture/SwipeGesture.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Filter/BlurFilter.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Filter/IFilter.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Filter/ColorFilter.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Custom/Stage.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Custom/GObject.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Custom/GComponent.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Custom/TouchScreenKeyboard.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Event/EventDispatcher.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Event/IEventDispatcher.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Event/InputEvent.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Event/EventListener.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Event/EventContext.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Event/EventBridge.cs: C++ source text, ASCII text, with CRLF line terminators
+../Assets/Scripts/Editor/EditorToolSet.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Editor/DisplayObjectEditor.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Editor/UIContentScalerEditor.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Editor/UIPanelEditor.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Editor/UIConfigEditor.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Editor/StageCameraEditor.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Editor/UIPainterEditor.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
+../Assets/Scripts/Editor/PackagesWindow.cs: C++ source text, Unicode text, UTF-8 (with BOM) text, with CRLF line terminators
