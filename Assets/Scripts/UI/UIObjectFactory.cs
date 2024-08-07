@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using UnityEngine;
 #if FAIRYGUI_TOLUA
 using LuaInterface;
 #endif
@@ -207,5 +208,12 @@ namespace FairyGUI
         public static Func<GComboBox> comboBoxCreator; // 构造器
 
         #endregion
+#if UNITY_2019_3_OR_NEWER
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+        static void InitializeOnLoad()
+        {
+            Clear();
+        }
+#endif
     }
 }

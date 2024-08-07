@@ -346,6 +346,7 @@ namespace FairyGUI
 
             if (_contentItem != null)
             {
+                _contentItem.skeletonLoaders.Add(this);
                 _contentItem = _contentItem.getBranch();
                 _contentItem = _contentItem.getHighResolution();
                 _contentItem.Load();
