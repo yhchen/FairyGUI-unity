@@ -836,7 +836,7 @@ namespace FairyGUI
         /// <summary>
         /// 
         /// </summary>
-        public Material material
+        public virtual Material material
         {
             get
             {

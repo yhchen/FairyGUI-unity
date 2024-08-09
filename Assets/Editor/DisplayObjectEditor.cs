@@ -158,9 +158,21 @@ namespace FairyGUIEditor
                 }
 
                 EditorGUI.BeginChangeCheck();
+                bool gray = EditorGUILayout.Toggle("Gray", gObj.grayed);
+                if (EditorGUI.EndChangeCheck())
+                    gObj.grayed = gray;
+
+                EditorGUI.BeginChangeCheck();
                 string tooltips = EditorGUILayout.TextField("Tooltips", gObj.tooltips);
                 if (EditorGUI.EndChangeCheck())
                     gObj.tooltips = tooltips;
+
+                EditorGUI.BeginDisabledGroup();
+                EditorGUILayout.BeginHorizontal();
+                EditorGUILayout.PrefixLabel("Rendering Order");
+                EditorGUILayout.IntField(gObj.displayObject.renderingOrder);
+                EditorGUILayout.EndHorizontal();
+                EditorGUI.EndDisabledGroup();
 
                 if (!(gObj is GImage))
                 {
