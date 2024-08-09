@@ -98,7 +98,7 @@ public class FairyBook : GComponent
 
     EventListener _onTurnComplete;
 
-    public override void ConstructFromXML(XML xml)
+    protected override void ConstructFromXML(XML xml)
     {
         base.ConstructFromXML(xml);
 

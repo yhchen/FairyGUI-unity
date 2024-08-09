@@ -3,7 +3,7 @@ using FairyGUI;
 
 public class CoolComponent : GComponent
 {
-    public override void ConstructFromXML(FairyGUI.Utils.XML cxml)
+    protected override void ConstructFromXML(FairyGUI.Utils.XML cxml)
     {
         base.ConstructFromXML(cxml);
 

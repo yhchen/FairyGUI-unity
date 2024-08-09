@@ -167,7 +167,7 @@ namespace FairyGUIEditor
                 if (EditorGUI.EndChangeCheck())
                     gObj.tooltips = tooltips;
 
-                EditorGUI.BeginDisabledGroup();
+                EditorGUI.BeginDisabledGroup(true);
                 EditorGUILayout.BeginHorizontal();
                 EditorGUILayout.PrefixLabel("Rendering Order");
                 EditorGUILayout.IntField(gObj.displayObject.renderingOrder);

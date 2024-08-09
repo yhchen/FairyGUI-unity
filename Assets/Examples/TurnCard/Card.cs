@@ -5,7 +5,7 @@ public class Card : GButton
     GObject _back;
     GObject _front;
 
-    public override void ConstructFromXML(FairyGUI.Utils.XML xml)
+    protected override void ConstructFromXML(FairyGUI.Utils.XML xml)
     {
         base.ConstructFromXML(xml);
 

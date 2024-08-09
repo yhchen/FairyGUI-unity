@@ -7,7 +7,7 @@ class BookPage : GComponent
     GoWrapper _modelWrapper;
     GObject _pageNumber;
 
-    public override void ConstructFromXML(FairyGUI.Utils.XML xml)
+    protected override void ConstructFromXML(FairyGUI.Utils.XML xml)
     {
         base.ConstructFromXML(xml);
         
