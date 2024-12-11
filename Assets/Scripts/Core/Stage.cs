@@ -704,12 +704,13 @@ namespace FairyGUI
         /// <param name="textPlaceholder"></param>
         /// <param name="keyboardType"></param>
         /// <param name="hideInput"></param>
+        /// <param name="characterLimit">custom: 增加输入字数限制</param>
         public void OpenKeyboard(string text, bool autocorrection, bool multiline, bool secure,
-            bool alert, string textPlaceholder, int keyboardType, bool hideInput)
+            bool alert, string textPlaceholder, int keyboardType, bool hideInput, int characterLimit)
         {
             if (_keyboard != null)
             {
-                _keyboard.Open(text, autocorrection, multiline, secure, alert, textPlaceholder, keyboardType, hideInput);
+                _keyboard.Open(text, autocorrection, multiline, secure, alert, textPlaceholder, keyboardType, hideInput, characterLimit);
                 _keyboardOpened = true;
             }
         }

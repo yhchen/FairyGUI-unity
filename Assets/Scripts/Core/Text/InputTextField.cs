@@ -1068,8 +1068,9 @@ namespace FairyGUI
 #if UNITY_IOS//IOS上如果 limit >0 会在输入时就限制了输入，导致输入有问题。
                         limit = 0;       
 #endif
-                        Stage.inst.OpenKeyboard(_text, keyboardType, false, _displayAsPassword ? false : !textField.singleLine,
-                            displayAsPassword, false, this.hideInput, null, limit); // custom, 增加keyboardType参数
+                        Stage.inst.OpenKeyboard(_text, false, _displayAsPassword ? false : !textField.singleLine,
+                            _displayAsPassword, false, null, keyboardType, hideInput, limit);
+
                     }
 
                     SetSelection(0, -1);

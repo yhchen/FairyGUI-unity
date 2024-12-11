@@ -32,22 +32,8 @@
         /// <param name="textPlaceholder"></param>
         /// <param name="keyboardType"></param>
         /// <param name="hideInput"></param>
-        void Open(string text, bool autocorrection, bool multiline, bool secure, bool alert, string textPlaceholder, int keyboardType, bool hideInput);
-
-        /// <summary>
-        /// 打开键盘: custom
-        /// </summary>
-        /// <param name="text"></param>
-        /// <param name="keyboardType"></param>
-        /// <param name="autocorrection"></param>
-        /// <param name="multiline"></param>
-        /// <param name="secure"></param>
-        /// <param name="alert"></param>
-        /// <param name="hideInput"></param>
-        /// <param name="textPlaceholder"></param>
-        /// <param name="characterLimit"></param>
-        public void Open(string text, int keyboardType, bool autocorrection, bool multiline, bool secure, bool alert,
-            bool hideInput, string textPlaceholder, int characterLimit);
+        /// <param name="characterLimit">custom: 增加输入字数限制</param>
+        void Open(string text, bool autocorrection, bool multiline, bool secure, bool alert, string textPlaceholder, int keyboardType, bool hideInput, int characterLimit);
 
         /// <summary>
         /// 关闭键盘
